@@ -47,13 +47,13 @@ const messages = {
   de,
   ...Object.entries(languageVariants).flatMap(([lang, variants]) =>
     variants.map(variant => [variant, { [lang]: eval(lang) }])
-  ).reduce((acc, [key, value]) => ({ ...acc, [key]: value }), {})
+  ).reduce((acc, [key, value]) => ({ ...acc, [key as string]: value }), {} as Record<string, any>)
 } as { [key: string]: DeepPartial<typeof en> }
 
 const fallbackLocale = {
   ...Object.entries(languageVariants).flatMap(([lang, variants]) =>
     variants.map(variant => [variant, [lang]])
-  ).reduce((acc, [key, value]) => ({ ...acc, [key]: value }), {}),
+  ).reduce((acc, [key, value]) => ({ ...acc, [key as string]: value }), {} as Record<string, any>),
   'default': ['en']
 }
 
