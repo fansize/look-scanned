@@ -9,15 +9,15 @@
     <n-grid-item>
       <FeatureCustomization />
     </n-grid-item>
-    <n-grid-item>
+    <!-- <n-grid-item>
       <FeatureOpenSource />
-    </n-grid-item>
+    </n-grid-item> -->
     <n-grid-item>
       <FeatureMobileFriendly />
     </n-grid-item>
-    <n-grid-item>
+    <!-- <n-grid-item>
       <FeatureOfflineUse />
-    </n-grid-item>
+    </n-grid-item> -->
   </n-grid>
 </template>
 

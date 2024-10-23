@@ -3,6 +3,7 @@
     <n-grid x-gap="100" y-gap="50" :cols="1" item-responsive responsive="screen" class="index-grid">
       <n-grid-item span="1">
         <TheIndexViewHead />
+        <HeroSection />
       </n-grid-item>
       <n-grid-item span="1">
         <TheFeatures />
@@ -13,6 +14,7 @@
 
 <script setup lang="ts">
 import { NGrid, NGridItem } from 'naive-ui'
+import HeroSection from '@/components/hero/HeroSection.vue'
 
 import TheIndexViewHead from '@/components/Misc/TheIndexViewHead.vue'
 import TheFeatures from '@/components/Features/TheFeatures.vue'
